@@ -23,13 +23,13 @@ jobs:
         run: bun install --production
 
       - name: Build 🔨
-        run: bun build --entrypoints ./*
+        run: bun run build
 
       - name: Lint 🔍
-        run: bun lint
+        run: bun run lint
 
       - name: Format 🖌️
-        run: bun format
+        run: bun run format
 
       - name: Test 🧪
         run: bun run --if-present test
