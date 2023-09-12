@@ -19,6 +19,7 @@
     "@simenandre/prettier": "^5.0.0",
     "eslint": "^8.49.0",
     "prettier": "^3.0.3",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "pino": "^8.15.1"
   }
 }
