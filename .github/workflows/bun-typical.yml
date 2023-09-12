@@ -23,7 +23,7 @@ jobs:
         run: bun install --production
 
       - name: Build 🔨
-        run: bun build
+        run: bun build ./* --outfile=bundle.js
 
       - name: Lint 🔍
         run: bun lint
