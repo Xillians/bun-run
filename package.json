@@ -2,6 +2,7 @@
   "name": "bun-run",
   "module": "index.ts",
   "type": "module",
+  "prettier": "@simenandre/prettier",
   "devDependencies": {
     "bun-types": "latest"
   },
@@ -9,6 +10,15 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "build": "bun build"
+    "build": "bun build",
+    "lint": "eslint . --ext .ts,.tsx,.js,.jsx",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@bjerk/eslint-config": "^6.0.2",
+    "@simenandre/prettier": "^5.0.0",
+    "eslint": "^8.49.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
   }
 }
