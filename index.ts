@@ -1,2 +1,11 @@
-// eslint-disable-next-line no-console
-console.log('Hello via Bun!');
+import pino from 'pino';
+
+const logger = pino.transport({
+    target: 'pino-pretty',
+    options: {
+        colorize: true,
+        ignore: 'pid,hostname'
+    }
+});
+
+logger.info('hello world');
